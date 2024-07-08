@@ -1,8 +1,10 @@
+version: '3'
+
 services:
   django:
     build: .
     ports:
-      - "8000:8000"
+      - "80:8000"
     depends_on:
       - db
     links:
@@ -13,7 +15,7 @@ services:
   db:
     image: postgres:16.3-alpine3.20
     expose:
-      - 5432:5432
+      - "5432"
     environment:
       - POSTGRES_USER=notes_db
       - POSTGRES_PASSWORD=0000
