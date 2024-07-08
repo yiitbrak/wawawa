@@ -1,0 +1,41 @@
+body {
+    background-color: #222020;
+    color: #F0F0F0;
+}
+
+.content>textarea {
+    resize: none;
+    width: 350px;
+    height: 300px;
+}
+
+.controls>button {
+    display: inline-block;
+}
+
+.notes_body {
+    background-color: #151515;
+    width: fit-content;
+    min-width: 350px;
+}
+
+.expando:not(:last-child) {
+    border-bottom: 5px solid gray;
+}
+
+.expando>button {
+    background-color: lightgray;
+    border-radius: 0px;
+    border: 0px;
+    width: 100%;
+    padding: 15px 5px;
+    text-align: left;
+}
+
+.expando>.content {
+    display: none;
+}
+
+.expando>.content.expanded {
+    display: block;
+}
