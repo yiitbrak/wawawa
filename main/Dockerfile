@@ -7,4 +7,5 @@ EXPOSE 8000
 
 
 # CMD ["sleep", "99999"]
-CMD ["/usr/bin/python", "manage.py", "runserver", "0.0.0.0:8000"]
+RUN chmod +x run.sh
+CMD ["/bin/sh","run.sh"]
