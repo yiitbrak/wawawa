@@ -39,3 +39,21 @@ body {
 .expando>.content.expanded {
     display: block;
 }
+
+.fake_button {
+    background: #333399;
+    color: #DFDFDF;
+    padding: 5px 10px;
+    border: 1px solid #000066;
+    border-radius: 7px;
+    max-width: fit-content;
+    margin-inline: auto;
+}
+
+.fake_button:hover {
+    background:  #5555AA;
+}
+
+a, a:hover, a:active, a:visited {
+    color: #DFDFDF;
+}

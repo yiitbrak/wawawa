@@ -6,6 +6,7 @@ services:
     depends_on:
       - django
       - node
+      - next
 
   django:
     build: main
@@ -15,6 +16,9 @@ services:
 
   node:
     build: node
+
+  next:
+    build: next
 
   db:
     image: postgres:16.3-alpine3.20

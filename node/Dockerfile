@@ -1,6 +1,6 @@
 FROM node:22-alpine
 
-WORKDIR /project
+WORKDIR /node_project
 COPY . .
 EXPOSE 8080
 CMD [ "node", "." ]
