@@ -14,18 +14,16 @@
 <script src="{% static 'js/expando.js' %}"></script>
 
 <body>
-    <div>
-        <marquee width="500" behavior="alternate">
-            <h3 class="fake_button"><a href="http://node.aaaabbbbcccc.click">Node</a></h3>
-            <h3 class="fake_button"><a href="http://next.aaaabbbbcccc.click">Next</a></h3>
-        </marquee>
+    <div class="side_by_side">
+        <h3 class="fake_button"><a href="http://node.aaaabbbbcccc.click">Node</a></h3>
+        <h3 class="fake_button"><a href="http://next.aaaabbbbcccc.click">Next</a></h3>
     </div>
     <div>
         <h1>Notes</h1>
         <form onsubmit="submit_handler(event)">
             <div>
                 <label for="title">Title:</label>
-                <input type="text" id="title" name="title" maxlength="50"/>
+                <input type="text" id="title" name="title" maxlength="50" />
             </div>
             <div>
                 <label for="content">Content:</label>

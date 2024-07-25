@@ -57,3 +57,11 @@ body {
 a, a:hover, a:active, a:visited {
     color: #DFDFDF;
 }
+
+.side_by_side{
+    display: inline flow-root list-item;
+}
+
+.side_by_side>.fake_button{
+    float: left;
+}
