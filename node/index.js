@@ -2,7 +2,7 @@ const { createServer } = require('node:http');
 const fs = require('node:fs');
 
 const hostname = '0.0.0.0';
-const port = 8080;
+const port = 80;
 
 
 let page_data
