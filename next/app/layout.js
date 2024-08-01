@@ -7,9 +7,7 @@ import os from 'os'
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <h3>Contained id: {os.hostname()}</h3>
-        {children}</body>
+      <body>{children}</body>
     </html>
   )
 }
