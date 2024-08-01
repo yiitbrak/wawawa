@@ -15,7 +15,10 @@ services:
   next:
     build: next
     ports:
-    - 127.0.0.1:8082:80
+    - 127.0.0.1:8082-8083:80
+    deploy:
+      mode: replicated
+      replicas: 2
 
   db:
     image: postgres:16.3-alpine3.20
