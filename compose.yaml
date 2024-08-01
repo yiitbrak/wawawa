@@ -2,10 +2,7 @@ services:
   django:
     build: main
     stop_signal: SIGKILL
-    ports:
-      - 127.0.0.1:8080:80
-    extra_hosts:
-    - "host.docker.internal:host-gateway"
+    network_mode: "host"
 
   node:
     build: node
