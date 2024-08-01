@@ -2,10 +2,10 @@ services:
   django:
     build: main
     stop_signal: SIGKILL
-    depends_on:
-      - db
     ports:
       - 127.0.0.1:8080:80
+    extra_hosts:
+    - "host.docker.internal:host-gateway"
 
   node:
     build: node
@@ -20,13 +20,6 @@ services:
       mode: replicated
       replicas: 2
 
-  db:
-    image: postgres:16.3-alpine3.20
-    environment:
-      - POSTGRES_USER=notes_db
-      - POSTGRES_PASSWORD=0000
-    volumes:
-      - db-volume:/var/lib/postgresql/data
 
 volumes:
   db-volume:

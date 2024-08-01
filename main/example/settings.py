@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'example.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': 'db',
+        'HOST': 'host.docker.internal',
         'NAME': 'postgres',
         'USER': 'notes_db',
         'PASSWORD': '0000',
