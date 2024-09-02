@@ -20,7 +20,7 @@
     </div>
     <div>
         <h1>Notes</h1>
-        <form onsubmit="submit_handler(event)">
+        <form onsubmit="submit_handler(event)">{% csrf_token %}
             <div>
                 <label for="title">Title:</label>
                 <input type="text" id="title" name="title" maxlength="50" />
